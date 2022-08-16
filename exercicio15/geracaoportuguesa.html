@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+	<script>
+		function pulaLinha(){
+			document.write("<br>");
+		}
+
+		function mostra(frase){
+			document.write(frase);
+			pulaLinha();
+		}
+
+			var anoAtual=2022;
+			var anoInicial=1500;
+			var mediaDeAnos=28;
+			var mediaCalculada= anoAtual-anoInicial/mediaDeAnos;
+			mediaCalculada=(anoAtual-anoInicial)/28
+			
+		mostra("Este programa é responsavel por calcular a media de gerações que se passaram na familia portuguesa dos anos 1500 até os anos atuais");
+		mostra("a media de anos de gerações passsadadas ate os dia de hoje é: " + Math.round(mediaCalculada) + " gerações passadas");
+	</script>

@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+    //função responsavel por sortear randomicamente cada um dos numeros 
+    //assim alterando cada um a cada respectiva chance do usuario
+    function sorteia(n){
+        return Math.round(Math.random() * n);
+    }
+    //variavel responsavel pela quantidade de numeros que podem cair de 0 a 10
+    var numeroPensado = sorteia(10);
+
+    var chute = parseInt(prompt("Já pensei! Escolha um numero de 0 a 10! hehe"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } else {
+
+        mostra("Você errou! Eu tinha pensado no " + numeroPensado);
+    }
+</script>
